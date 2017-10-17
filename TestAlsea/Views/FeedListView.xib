@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedListView" customModule="TestAlsea" customModuleProvider="target">
+            <connections>
+                <outlet property="hourLabel" destination="Ofx-ho-hWH" id="1Lh-IY-h6Y"/>
+                <outlet property="magLabel" destination="A2W-dM-QdF" id="yys-j0-yaZ"/>
+                <outlet property="placeLabel" destination="gOI-8F-MwM" id="L2e-14-3aH"/>
+                <outlet property="rootView" destination="iN0-l3-epB" id="3ru-or-9BB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StylableView" customModule="TestAlsea" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnitud:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9b-pn-ZQe" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Ob0-NX-qLq"/>
+                        <constraint firstAttribute="height" constant="21" id="hNj-KC-29b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativeLBold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btd-cS-i25" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="8" y="37" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="V7J-5m-3an"/>
+                        <constraint firstAttribute="height" constant="21" id="qfj-O7-Sa5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativeLBold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S43-BR-FeD" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="8" y="66" width="52" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LAM-Ki-W7s"/>
+                        <constraint firstAttribute="width" constant="52" id="fKK-d8-06o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativeLBold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2W-dM-QdF" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="96" y="8" width="271" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="n9c-J5-cTf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOI-8F-MwM" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="71" y="32" width="296" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tRP-bn-f0X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofx-ho-hWH" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="71" y="70" width="296" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4lm-OP-fe4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseNegativel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HP-fa-OG2">
+                    <rect key="frame" x="0.0" y="94" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="D9i-uA-lOW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="A2W-dM-QdF" secondAttribute="trailing" constant="8" id="8ht-N3-kWH"/>
+                <constraint firstItem="M9b-pn-ZQe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Fuc-kP-Vf0"/>
+                <constraint firstItem="gOI-8F-MwM" firstAttribute="leading" secondItem="btd-cS-i25" secondAttribute="trailing" constant="8" id="Ken-Gy-VuY"/>
+                <constraint firstItem="S43-BR-FeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KwD-UR-4hf"/>
+                <constraint firstItem="2HP-fa-OG2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pgz-Bi-0Hm"/>
+                <constraint firstAttribute="bottom" secondItem="2HP-fa-OG2" secondAttribute="bottom" id="QbI-ua-O5o"/>
+                <constraint firstItem="btd-cS-i25" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="R0M-G8-Wxm"/>
+                <constraint firstItem="Ofx-ho-hWH" firstAttribute="leading" secondItem="gOI-8F-MwM" secondAttribute="leading" id="Stb-fq-LWi"/>
+                <constraint firstAttribute="trailing" secondItem="2HP-fa-OG2" secondAttribute="trailing" id="UtP-dU-6D2"/>
+                <constraint firstItem="A2W-dM-QdF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dtb-ys-5Lc"/>
+                <constraint firstAttribute="trailing" secondItem="Ofx-ho-hWH" secondAttribute="trailing" constant="8" id="dwI-xL-0lC"/>
+                <constraint firstItem="Ofx-ho-hWH" firstAttribute="top" secondItem="gOI-8F-MwM" secondAttribute="bottom" constant="8" id="fmQ-iN-Q9a"/>
+                <constraint firstItem="M9b-pn-ZQe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="j7F-4j-bJ2"/>
+                <constraint firstAttribute="trailing" secondItem="gOI-8F-MwM" secondAttribute="trailing" constant="8" id="mbb-87-mLL"/>
+                <constraint firstItem="A2W-dM-QdF" firstAttribute="leading" secondItem="M9b-pn-ZQe" secondAttribute="trailing" constant="8" id="s7A-kA-oRM"/>
+                <constraint firstItem="btd-cS-i25" firstAttribute="top" secondItem="M9b-pn-ZQe" secondAttribute="bottom" constant="8" id="u8k-6c-hc7"/>
+                <constraint firstItem="gOI-8F-MwM" firstAttribute="top" secondItem="M9b-pn-ZQe" secondAttribute="bottom" constant="3" id="wOd-2z-jGG"/>
+                <constraint firstItem="S43-BR-FeD" firstAttribute="top" secondItem="btd-cS-i25" secondAttribute="bottom" constant="8" id="yzZ-z9-Ygb"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="primGreenView"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-106" y="-175"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_TestAlsea_TestAlsea {
+  umbrella header "Pods-TestAlsea-TestAlsea-umbrella.h"
+
+  export *
+  module * { export * }
+}

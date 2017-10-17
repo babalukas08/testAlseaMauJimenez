@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModAccessoryViewHeader" customModule="TestAlsea">
+            <connections>
+                <outlet property="secondButton" destination="lvo-tT-Njh" id="Rsj-Wr-Nyy"/>
+                <outlet property="titleModal" destination="mfx-5s-kTd" id="GP0-zT-XQ0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1X-YK-5tv" userLabel="Header">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-t2-lRs" customClass="StylableView" customModule="TestAlsea" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="42" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="gUo-dp-AmF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="gray300View"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vIx-il-LQU">
+                    <rect key="frame" x="16" y="0.0" width="343" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tu Talle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-5s-kTd" customClass="Heading" customModule="TestAlsea" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="12" width="97.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="generalH3"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvo-tT-Njh" customClass="SimpleStylableButton" customModule="TestAlsea" customModuleProvider="target">
+                            <rect key="frame" x="300" y="7.5" width="43" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="SP5-52-nMs"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="textBaseAccent"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vIx-il-LQU" firstAttribute="leading" secondItem="k1X-YK-5tv" secondAttribute="leading" constant="16" id="3sB-Eu-0EX"/>
+                <constraint firstAttribute="trailing" secondItem="vIx-il-LQU" secondAttribute="trailing" constant="16" id="BxQ-hk-sxg"/>
+                <constraint firstItem="FAF-t2-lRs" firstAttribute="leading" secondItem="k1X-YK-5tv" secondAttribute="leading" id="MoZ-Xd-oHw"/>
+                <constraint firstAttribute="bottom" secondItem="FAF-t2-lRs" secondAttribute="bottom" id="d26-q7-YBW"/>
+                <constraint firstAttribute="bottom" secondItem="vIx-il-LQU" secondAttribute="bottom" id="d7h-IW-4XS"/>
+                <constraint firstItem="vIx-il-LQU" firstAttribute="top" secondItem="k1X-YK-5tv" secondAttribute="top" id="dBT-XY-5zj"/>
+                <constraint firstAttribute="trailing" secondItem="FAF-t2-lRs" secondAttribute="trailing" id="iYc-UX-dyF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
